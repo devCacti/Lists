@@ -1,0 +1,9 @@
+.all-lists {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+
+}
+
+.new-list-form {
+    display: flex;
+    gap: 10px;
+}

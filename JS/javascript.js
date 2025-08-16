@@ -2,4 +2,3 @@
 const spacer = document.getElementById('spacer');
 const footer = document.querySelector('footer');
 const footerHeight = footer.offsetHeight;
-spacer.style.height = `${footerHeight + 50}px`;

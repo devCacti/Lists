@@ -1,0 +1,19 @@
+.name-input {
+    border-radius: 50px;
+    background: #000000a0;
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    box-shadow: #ffffff 0 0 10px -1px;
+    padding: 15px 20px;
+    font-size: 17px;
+    transition: .5s;
+}
+
+.name-input:hover {
+    transform: scale(105%)
+}
+
+.name-input:focus {
+    transform: scale(105%)
+}

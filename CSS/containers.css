@@ -65,6 +65,11 @@ main {
     /* allows scrolling but still triggers touches */
 }
 
+div.space {
+    height: 200px;
+    flex: 0 0 auto;
+}
+
 footer {
     position: absolute;
     bottom: 0;
