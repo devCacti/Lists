@@ -11,9 +11,11 @@
 }
 
 .name-input:hover {
-    transform: scale(105%)
+    transform: scale(105%);
+    box-shadow: green 0 0 10px -1px;
 }
 
 .name-input:focus {
-    transform: scale(105%)
+    transform: scale(105%);
+    box-shadow: rgb(255, 0, 128) 0 0 15px 1px;
 }

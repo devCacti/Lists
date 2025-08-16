@@ -11,10 +11,75 @@
 
 .add-button:hover {
     transform: scale(110%);
-    box-shadow: yellow 0 0 10px -1px;
+    box-shadow: green 0 0 10px -1px;
 }
 
 .add-button:active {
     transform: scale(95%);
     box-shadow: rgb(255, 0, 128) 0 0 15px 1px;
+}
+
+.checklist-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #88888890;
+    transition: 0.5s;
+    border-radius: 50px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 5px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.35s;
+    border-radius: 50%;
+    box-shadow: white 0 0 15px -1px;
+}
+
+.slider:hover {
+    transform: scale(120%);
+}
+
+input:checked+.slider {
+    background-color: rgb(255, 0, 128);
+    box-shadow: rgb(255, 0, 128) 0 0 15px -1px;
+}
+
+input:checked+.slider::before {
+    transform: translateX(22px);
+}
+
+.toggle-label {
+    font-size: 16px;
 }
