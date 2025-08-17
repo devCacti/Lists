@@ -71,9 +71,22 @@
     transform: scale(120%);
 }
 
-input:checked+.slider {
+input:checked+.slider.pink {
     background-color: rgb(255, 0, 128);
     box-shadow: rgb(255, 0, 128) 0 0 15px -1px;
+}
+
+input:checked+.slider.red {
+    background-color: rgb(255, 0, 0);
+    box-shadow: rgb(255, 0, 0) 0 0 15px -1px;
+}
+input:checked+.slider.green {
+    background-color: rgb(0, 255, 0);
+    box-shadow: rgb(0, 255, 0) 0 0 15px -1px;
+}
+input:checked+.slider.blue {
+    background-color: rgb(0, 100, 255);
+    box-shadow: rgb(0, 100, 255) 0 0 15px -1px;
 }
 
 input:checked+.slider::before {
