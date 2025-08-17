@@ -4,10 +4,19 @@
     backdrop-filter: blur(10px);
     color: white;
     border: none;
-    box-shadow: #ffffff 0 0 10px -1px;
+    box-shadow: #ffffff 0 0 5px -1px;
     padding: 15px 20px;
     font-size: 17px;
     transition: .5s;
+}
+
+/* 
+    The size of this is controlled by the biggest element in the row, meaning that if the button is bigger in height, this one will have the same size
+*/
+.name-input.small {
+    padding: 5px 15px;
+    font-size: 14px;
+    width: 100%;
 }
 
 .name-input:hover {

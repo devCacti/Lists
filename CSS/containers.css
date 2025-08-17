@@ -58,7 +58,7 @@ main {
     flex-direction: column;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    height: 100vh;
+    min-height: 100dvb;
     padding: 20px;
     scroll-behavior: smooth;
     touch-action: manipulation;
@@ -71,7 +71,7 @@ div.space {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 20px;
     right: 20px;

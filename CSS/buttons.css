@@ -1,13 +1,19 @@
 .add-button {
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     border-radius: 50px;
     border: none;
     background: #000000a0;
-    box-shadow: #ffffff 0 0 10px -1px;
+    box-shadow: #ffffff 0 0 5px -1px;
     transition: .5s;
     cursor: pointer;
 }
+
+.add-button.small {
+    min-width: 40px;
+    min-height: 40px;
+}
+
 
 .add-button:hover {
     transform: scale(110%);
@@ -21,10 +27,13 @@
 
 .checklist-toggle {
     display: flex;
+    flex: 0;
+    margin: 0px 10px;
+    padding: 0px 10px;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
     margin-bottom: 15px;
-    justify-content: center;
     font-family: sans-serif;
     color: white;
 }
